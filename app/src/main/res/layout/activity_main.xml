@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <Button
         android:id="@+id/plus_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/plus"
+        android:onClick="addTheNumbers"
         app:layout_constraintBaseline_toBaselineOf="@+id/mul_button"
         app:layout_constraintEnd_toStartOf="@+id/div_button"
         app:layout_constraintHorizontal_bias="0.5"
@@ -21,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/multi"
+        android:onClick="MulBtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -33,6 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/div"
+        android:onClick="getDiv"
         app:layout_constraintBaseline_toBaselineOf="@+id/mul_button"
         app:layout_constraintEnd_toStartOf="@+id/mul_button"
         app:layout_constraintHorizontal_bias="0.5"
